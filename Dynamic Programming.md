@@ -34,6 +34,3 @@
 nums[i] = max(curr_max, nums[i-1])
 ```
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwOTY0NDYwOV19
--->
