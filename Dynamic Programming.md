@@ -10,7 +10,7 @@
 <li>Two Cases:</li>
 </ul>
 <ol>
-<li>If the maximum of the previous point &lt; 0 (stored in <code>curr_max</code>) : then the maximum of the current point is restarted</li>
+<li>If the maximum of the previous point &lt; 0 (stored in <code>`curr_max</code>`) : then the maximum of the current point is restarted</li>
 </ol>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">if</span> curr_max <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
 	curr_max <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
@@ -22,9 +22,16 @@
 	curr_max <span class="token operator">+=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
 </code></pre>
 <ul>
-<li>DP Storage: Update the <code>nums[i]</code><br>
-<code>nums[i]</code> store the global maximum so far: compare the <code>curr_max</code> to <code>nums[i-1]</code></li>
+<li>DP Storage: Update the <code>`nums[i]</code><br>
+<code>nums[i]</code>`
+`nums[i]` store the global maximum so far: compare the <code>`curr_max</code> to <code>nums[i-1]</code></li>
 </ul>
 <pre class=" language-python"><code class="prism  language-python">nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>curr_max<span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-</code></pre>
+</code></pre>` to `nums[i-1]`
+```python
+nums[i] = max(curr_max, nums[i-1])
+```
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQxNDk5MDM0Ml19
+-->
