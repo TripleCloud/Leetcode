@@ -1,8 +1,9 @@
 
-Date | Content
-_________| ______________________________
-|Dynamic Programming
+Date | Content | Questions
+____________ | ______________________ | __________
+12/03/2019 | Dynamic Programming |  239
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0Mzc5MTgwLC04ODAxOTI4NzBdfQ==
+eyJoaXN0b3J5IjpbMTIxMjQzMDQzNCwtODgwMTkyODcwXX0=
 -->
