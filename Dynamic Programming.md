@@ -1,8 +1,16 @@
----
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Programming</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
 
----
-
+<body class="stackedit">
+  <div class="stackedit__html"><hr>
+<hr>
 <hr>
 <hr>
 <h1 id="dynamic-programming">Dynamic Programming</h1>
@@ -18,7 +26,7 @@
 	curr_max <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
 </code></pre>
 <ol start="2">
-<li>If the maximum of the previous point <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo><mo>≥</mo><mo>≥</mo></mrow><annotation encoding="application/x-tex">≥\geq≥</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span></span></span></span> 0: the maximum of the current point is culmulated</li>
+<li>If the maximum of the previous point <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo><mo>≥</mo><mo>≥</mo><mo>≥</mo><mo>≥</mo><mo>≥</mo><mo>≥</mo><mo>≥</mo><mo>≥</mo></mrow><annotation encoding="application/x-tex">≥≥≥≥\geq≥≥≥≥</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span></span></span></span> 0: the maximum of the current point is culmulated</li>
 </ol>
 <pre class="  language-python"><code class="prism  language-python"><span class="token keyword">else</span><span class="token punctuation">:</span>
 	curr_max <span class="token operator">+=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
@@ -33,4 +41,7 @@
 ```python
 nums[i] = max(curr_max, nums[i-1])
 ```
+</div>
+</body>
 
+</html>
