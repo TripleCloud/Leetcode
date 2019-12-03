@@ -12,7 +12,7 @@
 <li>Two Cases:</li>
 </ul>
 <ol>
-<li>If the maximum of the previous point &lt; 0 (stored in <code>`curr_max</code>`) : then the maximum of the current point is restarted</li>
+<li>If the maximum of the previous point  0 (stored in <code>`curr_max</code>`) : then the maximum of the current point is restarted</li>
 </ol>
 <pre class="  language-python"><code class="prism  language-python"><span class="token keyword">if</span> curr_max <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
 	curr_max <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
@@ -34,3 +34,6 @@
 nums[i] = max(curr_max, nums[i-1])
 ```
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTkwOTY0NDYwOV19
+-->
