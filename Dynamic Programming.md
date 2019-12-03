@@ -15,9 +15,12 @@ else:
 	curr_max += nums[i]
 ```
 - DP Storage: Update the `nums[i]`
-`nums[i]` store the global maximum so far: 
+`nums[i]` store the global maximum so far: compare the `curr_max` to `nums[i-1]`
+```python
+nums[i] = max(curr_max, nums[i-1])
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMDYzMTc1MywzNTA5MTM3MTAsODk0Nj
+eyJoaXN0b3J5IjpbLTk0NzE0NzcwNiwzNTA5MTM3MTAsODk0Nj
 QxOTYzLC0yMDg4NzQ2NjEyXX0=
 -->
