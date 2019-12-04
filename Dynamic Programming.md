@@ -27,7 +27,9 @@ $$ dp[0] = arr[0]$$
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-
+## 121. Best Time to Buy and Sell Stock
+dp[i] = 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUyMjExOTA1LC05NDcxNDc3MDZdfQ==
+eyJoaXN0b3J5IjpbLTcyODI5NDc0MiwyNTIyMTE5MDUsLTk0Nz
+E0NzcwNl19
 -->
