@@ -29,8 +29,10 @@ $$ dp[0] = arr[0]$$
 
 ## 121. Best Time to Buy and Sell Stock
 right -> left
-dp[i] = max(dp[i], dp[
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NTA5MDk4NiwtNzI4Mjk0NzQyLDI1Mj
+eyJoaXN0b3J5IjpbLTY4NTg3OTYwNiwtNzI4Mjk0NzQyLDI1Mj
 IxMTkwNSwtOTQ3MTQ3NzA2XX0=
 -->
