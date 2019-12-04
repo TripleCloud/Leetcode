@@ -29,10 +29,24 @@ $$ dp[0] = arr[0]$$
 
 ## 121. Best Time to Buy and Sell Stock
 right -> left
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        n = len(prices)
+        max_profit = 0
+        if n == 0:
+            return max_profit
+        high_sell = prices[n-1]
+        for i in range(1, n + 1):
+            if prices[n - i] > high_sell:
+                high_sell = prices[n - i]
+            elif high_sell - prices[n - i] > max_profit:
+                max_profit = high_sell - prices[n - i]
+        return max_profit
 ```
 
-```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTg3OTYwNiwtNzI4Mjk0NzQyLDI1Mj
-IxMTkwNSwtOTQ3MTQ3NzA2XX0=
+eyJoaXN0b3J5IjpbNTA5MzU1ODMsLTcyODI5NDc0MiwyNTIyMT
+E5MDUsLTk0NzE0NzcwNl19
 -->
