@@ -21,9 +21,9 @@ nums[i] = max(curr_max, nums[i-1])
 ```
 
 ### Kadane's Algorithm: Maximum Subarray Sum
-
+$$dp[i] = max(dp[i-1], 0) + arr[i]$$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MjE4OTY0NiwtOTQ3MTQ3NzA2XX0=
+eyJoaXN0b3J5IjpbMTk4MTY5MjAyMywtOTQ3MTQ3NzA2XX0=
 -->
