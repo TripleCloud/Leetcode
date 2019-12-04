@@ -28,8 +28,9 @@ $$ dp[0] = arr[0]$$
 - Space Complexity: O(1)
 
 ## 121. Best Time to Buy and Sell Stock
-dp[i] = 
+right -> left
+dp[i] = max(dp[i], dp[
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyODI5NDc0MiwyNTIyMTE5MDUsLTk0Nz
-E0NzcwNl19
+eyJoaXN0b3J5IjpbMTk2NTA5MDk4NiwtNzI4Mjk0NzQyLDI1Mj
+IxMTkwNSwtOTQ3MTQ3NzA2XX0=
 -->
