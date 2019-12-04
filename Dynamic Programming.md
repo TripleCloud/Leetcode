@@ -22,8 +22,12 @@ nums[i] = max(curr_max, nums[i-1])
 
 ### Kadane's Algorithm: Maximum Subarray Sum
 $$dp[i] = max(dp[i-1], 0) + arr[i]$$
+- Base Conditions:
+$$ dp[0] = arr[0]$$
+- Time Complexity: O(N)
+- Space Complexity: O(1)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTY5MjAyMywtOTQ3MTQ3NzA2XX0=
+eyJoaXN0b3J5IjpbMjUyMjExOTA1LC05NDcxNDc3MDZdfQ==
 -->
