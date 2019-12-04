@@ -15,12 +15,12 @@
 <hr>
 <h1 id="dynamic-programming">Dynamic Programming</h1>
 <h2 id="sliding-window-maximum">239. Sliding Window Maximum</h2>
-<h2 id="maximum-subarray">53. Maximum Subarray</h2>
+<h2 id="maximum-subarray">53. MaximuSubarray</h2>
 <ul>
 <li>Two Cases:</li>
 </ul>
 <ol>
-<li>If the maximum of the previous point  0 (stored in <code>`curr_max</code>`) : then the maximum of the current point is restarted</li>
+<li>If the maxi the previous point  0 (stored in <code>curr_</code>`) : then the maximum: of the cent point is restarted</li>
 </ol>
 <pre class="  language-python"><code class="prism  language-python"><span class="token keyword">if</span> curr_max <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
 	curr_max <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
@@ -45,3 +45,6 @@ nums[i] = max(curr_max, nums[i-1])
 </body>
 
 </html>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODYyOTcxNzY0XX0=
+-->
