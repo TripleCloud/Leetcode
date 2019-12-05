@@ -85,12 +85,17 @@ class Solution:
                 start = i - int((ret -1) / 2)
                 end = i + int(ret / 2)
         return s[start:end + 1]
+	 def expand(self, string, s, e):
+        while (s >= 0 and e < len(string) and string[s] == string[e]):
+            s -= 1
+            e += 1
+        return (e-1) - (s+1) + 1
 ```
 Time complexity: O($n^2$)
-Space complexity: O($n^2$)
+Space complexity: O($1$)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1NzA3NDIyLDUwOTM1NTgzLC03MjgyOT
-Q3NDIsMjUyMjExOTA1LC05NDcxNDc3MDZdfQ==
+eyJoaXN0b3J5IjpbMTk1OTg3MzAxOSw1MDkzNTU4MywtNzI4Mj
+k0NzQyLDI1MjIxMTkwNSwtOTQ3MTQ3NzA2XX0=
 -->
