@@ -42,11 +42,31 @@ class Solution:
                 high_sell = prices[n - i]
             elif high_sell - prices[n - i] > max_profit:
                 max_profit = high_sell - prices[n - i]
-        return max_profit
+        return max_profi
+```
+## 5. Longest Palindromic Substring
+Method 1: DP
+```python
+
+```
+Method 2: Expand from the center
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        start = end = 0
+        for i in range(len(s)):
+            odd = self.expand(s, i, i)
+            even = self.expand(s, i, i + 1)
+            ret = max(odd, even)
+            print(ret)
+            if ret > (end - start + 1):
+                start = i - int((ret -1) / 2)
+                end = i + int(ret / 2)
+        return s[start:end + 1]
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA5MzU1ODMsLTcyODI5NDc0MiwyNTIyMT
-E5MDUsLTk0NzE0NzcwNl19
+eyJoaXN0b3J5IjpbLTExMzE5NTYyNDQsNTA5MzU1ODMsLTcyOD
+I5NDc0MiwyNTIyMTE5MDUsLTk0NzE0NzcwNl19
 -->
