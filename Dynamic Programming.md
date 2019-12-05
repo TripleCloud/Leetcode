@@ -45,11 +45,33 @@ class Solution:
         return max_profi
 ```
 ## 5. Longest Palindromic Substring
-Method 1: DP
+### Method 1: DP
 ```python
-
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        dp = [[False] * len(s) for _ in range(len(s))]
+        start_max = end_max = 0
+        for i in range(len(s)):
+            start = i
+            end = i
+            while start >= 0:
+                if start == end:
+                    dp[start][end] = s[start] == s[end]
+                elif start + 1 == end:
+                    dp[start][end] = s[start] == s[end]
+                else:
+                    dp[start][end] = dp[start + 1][end - 1] and s[start] == s[end]
+                    
+                if dp[start][end] and (end - start) > (end_max - start_max):
+                    start_max = start
+                    end_max = end
+                start -= 1
+        return s[start_max:end_max+1]
 ```
-Method 2: Expand from the center
+Time complexity: O($n^2$)
+Space complexity: O($n^2$)
+
+### Method 2: Expand from the center
 ```python
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -64,9 +86,11 @@ class Solution:
                 end = i + int(ret / 2)
         return s[start:end + 1]
 ```
+Time complexity: O($n^2$)
+Space complexity: O($n^2$)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzE5NTYyNDQsNTA5MzU1ODMsLTcyOD
-I5NDc0MiwyNTIyMTE5MDUsLTk0NzE0NzcwNl19
+eyJoaXN0b3J5IjpbMzA1NzA3NDIyLDUwOTM1NTgzLC03MjgyOT
+Q3NDIsMjUyMjExOTA1LC05NDcxNDc3MDZdfQ==
 -->
