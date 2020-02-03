@@ -111,6 +111,30 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 地里其实刷到这道题了(最小堆，k会变）
 
 一道类似system design的题目 针对马拉松这个event设计getEvent() 和 leaderboard()
+
+
+第一轮on-campus:  
+一道merge linkedlist加follow up  
+一道design点餐系统（就是几个函数，然后维护一个数据架构，增删查改顾客这样）  
+气氛愉快，过了
+
+刷题网 吴柳玲
+
+1) 第一题很诡异，不太好描述，我说不清楚，觉得对大家参考价值不大。不过不难，就是用dfs扫一遍binary tree，这题要写代码  
+2) 设计数据结构：有两个操作，一个是Insert一个数，另一个是getMedian。getMedian的调用次数远远大于insert的次数 （lc295）  
+解：两个堆，大顶堆维护比当前median小的数，小顶堆维护比当前median大的数。插入一个数，如果比当前median大，插入右侧小顶堆，pop小顶堆，并求median  
+这题不用写代码，讲讲思路就行  
+  
+第二轮  
+先聊简历  
+俩题  
+1) 设计一个音乐播放器的class结构，包括play/pause/play next song/ play previous song/ add new songs/ delete songs  
+要求实现add new songs (song, position). 问了很多time complexity的问题。注意实现的时候如果用array会遇到delete song时O(n). 我用的是doubly linked list  
+2) 给定一个array [p1, p2, p3, p4]，代表4个process，给定一个随机函数随机从array中选一个process。现在每次选出来的process需要从array中删掉，怎么做比较快，又能节约内存  
+解：每次把选中的process和array最后的process交换，然后length - 1 [p1, p2, p3, p4]，假如选中了p2, 那么array变成[p1, p4, p3, p2]，然后length变成3，这样下次再random取的时候就不会取到p2  
+注意，不能每次从array直接pop掉选中的元素，因为时间复杂度是O(n)。这样做时间复杂度是O(1)  
+follow-up: 如何节约array消耗的内存？  
+解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MjIxMTY3M119
+eyJoaXN0b3J5IjpbNDc3OTMyOTIwXX0=
 -->
