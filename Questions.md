@@ -19,7 +19,13 @@ input可以使 2 2 2 3 46 2什么的
 
 1. 包装过的min stack  
 2. 给一堆冰块，在每个时刻都会有从左从右从上方吹来的风融化暴露的冰块，问在哪个时刻冰块会全部融化
+Math.min(maxHeight, (maxWidth + 1) / 2 )
+
+3. 一个矩阵里面是海拔高度，从第一列中间的点开始倒水，判断会不会留到两边。  
+很简单 DFS + memo, 注意判断visited  
+4. LFU
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjgyOTg5NDZdfQ==
+eyJoaXN0b3J5IjpbLTkxMjA5OTQ0MV19
 -->
