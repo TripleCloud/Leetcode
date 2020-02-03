@@ -42,6 +42,21 @@ top k的股票问题 + follow up
 第二轮：  
 蠡口鹅伞🤙  
 蠡口起就起
+
+[刷题](http://www.1point3acres.com/bbs/forum-84-1.html)网叁四期变种  
+刷题网妖酒酒变种  
+  
+二面  
+聊简历，讲实习经历，实习中最有挑战的部分，why BB  
+OOD，设计股票，有很多支股票input，要求写function返回某只股票的平均价格。有很多follow up，记不太清了  
+follow up 1: 返回任意时间点，某只股票的平均价格(函数的Input这次多了个int时间)  
+follow up 2: 返回最多股数的K支股票  
+  
+刷题网散酒气原题
+
+1. 找数组中位数，quickselect  
+  
+2. dp计算矩阵最小乘法次数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEyNzU2ODddfQ==
+eyJoaXN0b3J5IjpbMjExODI5MTA3N119
 -->
