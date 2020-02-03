@@ -90,6 +90,8 @@ target=11
 然后面试官要求优化空间复杂度，楼主第二反应就是将A和B排序，然后two pointer找是否存在。Time -> O(nlogn) Space -> O(1)  
 然后面试官要求继续优化，楼主思索片刻，发现是Byte数组，那么只要建立一个长为2^8的array来记录A中哪些数字存在，然后遍历B即可。Time -> O(n) Space -> O(1)  
 最后要求实现一下，这里楼主写了一个bug：target - num有可能小于0而出现数组越界问题
+
+minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过。一开始想了用pq，arraylist，hash等等都发现有些问题，后来提醒了一下我说可以用stack。然后交流了一下就开始写了，写的太仔细速度比较慢，写完以后手跑了几个test case
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTk1MzQyNV19
+eyJoaXN0b3J5IjpbMTUxNDAwMjY3NF19
 -->
