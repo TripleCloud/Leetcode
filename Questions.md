@@ -25,7 +25,17 @@ Math.min(maxHeight, (maxWidth + 1) / 2 )
 很简单 DFS + memo, 注意判断visited  
 4. LFU
 
+1029. Two City Scheduling
 
+
+嚟蔻 尔巴叁 和  
+一个乱序的二叉树，保持原有的struct的情况下输出二叉搜索树
+
+[系统设计](http://https//www.educative.io/courses/grokking-the-system-design-interview?affiliate_id=5749180081373184/)：  
+搜索引擎中 紫东 布泉的功能  
+问了很多follow up  
+  
+top k的股票问题 + follow up
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjA5OTQ0MV19
+eyJoaXN0b3J5IjpbLTE5NzM3NTA1MTVdfQ==
 -->
