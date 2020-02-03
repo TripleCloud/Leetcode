@@ -106,6 +106,11 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 
 第一轮：洱 肆肆舞 斯乌噫变种 问了点排序和hashmap扩容  
 第二轮：姚司令 舅爸 还有一个之前没做过是把二叉树转成BST，应该是妖灵舅
+
+考了一道design，大意是有很多不断更新tweet，需要经常查出现频率 top k 的公司，给一个函数 get 可以得到某条 tweet 里的公司列表，需要写 2 个函数 insert 和 top_k.  
+地里其实刷到这道题了(最小堆，k会变）
+
+一道类似system design的题目 针对马拉松这个event设计getEvent() 和 leaderboard()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODkwOTkzMzRdfQ==
+eyJoaXN0b3J5IjpbMTc5MjIxMTY3M119
 -->
