@@ -80,7 +80,16 @@ follow up 2: 返回最多股数的K支股票
 1，boundary of a binary tree LC原题  
 2，N个人排成一个圈编号0~n-1，每次按顺时针方向给人一把刀，他会捅死自己顺时针方向的下一个人，返回最后活下来的人的序号
 
-
+两个Byte类型的数组，分别为A和B。现给出target sum，问是否能从A和B中各找出一个数使得它们的和为target。  
+比如：  
+A=[1,5,3,6]  
+B=[5,2,8,4]  
+target=11  
+返回true，因为存在3（in A) + 8 (in B) = 11  
+楼主第一反应就是hashmap，简单直接。要求复杂度分析：Time -> O(n) Space -> O(n)  
+然后面试官要求优化空间复杂度，楼主第二反应就是将A和B排序，然后two pointer找是否存在。Time -> O(nlogn) Space -> O(1)  
+然后面试官要求继续优化，楼主思索片刻，发现是Byte数组，那么只要建立一个长为2^8的array来记录A中哪些数字存在，然后遍历B即可。Time -> O(n) Space -> O(1)  
+最后要求实现一下，这里楼主写了一个bug：target - num有可能小于0而出现数组越界问题
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDcxNTYyNzRdfQ==
+eyJoaXN0b3J5IjpbLTExOTk1MzQyNV19
 -->
