@@ -36,6 +36,12 @@ Math.min(maxHeight, (maxWidth + 1) / 2 )
 问了很多follow up  
   
 top k的股票问题 + follow up
+
+设计一个ArrayList类，有许多followUp，其实更多的是和面试官讨论怎样implement更好一些  
+设计一个可以随时取出栈中最小元素的stack  
+第二轮：  
+蠡口鹅伞🤙  
+蠡口起就起
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzM3NTA1MTVdfQ==
+eyJoaXN0b3J5IjpbNTEyNzU2ODddfQ==
 -->
