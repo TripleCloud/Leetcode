@@ -57,6 +57,30 @@ follow up 2: 返回最多股数的K支股票
 1. 找数组中位数，quickselect  
   
 2. dp计算矩阵最小乘法次数
+1. NYC 地铁题  
+2. 黎蔻 伞久四  
+2轮：  
+1. datastream top K 三个小问  
+（1）不同公司 只保留most recent 10 个 datastream （用了map + queue）  
+（2） multi-thread 情况：同时得到多个data: (checkpoint + xlock + commit）  
+（3）对于不同公司， 累加对应quantity, 然后return top k quantity 的公司
+
+  
+  
+（e.g. IBM: 1000, MS: 500, APPLE: 3000, IBM: 400）return (top 2): (Apple: 3000, IBM: 1400
+
+第一轮两道题：lc 153 第二题 给一堆flight的信息 然后给一个start end 找所有能从start飞到end的route  
+第二轮两道题：纽约地铁站面经 然后建一个sparse matrix的class
+
+第一轮：  
+1，一维candy crush，一个字符串如AABBBACD，出现3次及以上的字符消除，消除之后的如果也有这样的pattern继续消除，对于这个input A,B都会被消除，输出CD。做法是先压缩成(A,2),(B,3),(A,1),(C,1),(D,1)之后再扫描  
+2，meeting rooms2  
+  
+第二轮：  
+1，boundary of a binary tree LC原题  
+2，N个人排成一个圈编号0~n-1，每次按顺时针方向给人一把刀，他会捅死自己顺时针方向的下一个人，返回最后活下来的人的序号
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExODI5MTA3N119
+eyJoaXN0b3J5IjpbLTE4MDcxNTYyNzRdfQ==
 -->
