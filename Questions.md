@@ -92,6 +92,20 @@ target=11
 最后要求实现一下，这里楼主写了一个bug：target - num有可能小于0而出现数组越界问题
 
 minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过。一开始想了用pq，arraylist，hash等等都发现有些问题，后来提醒了一下我说可以用stack。然后交流了一下就开始写了，写的太仔细速度比较慢，写完以后手跑了几个test case
+
+第一轮 我觉得强度已经比我想象的大了  
+1， 设计一个历史记录 基础版 linkedlist不用实现LRU的功能， 后面follow up加上LRU  
+2， 进程占用时间的安排 也就是meeting room2 包装一下，下面重点来了，follow up是资源不够就是meeting room不够的时候怎么办 因为之前和同学讨论过meeting room不够的时候如何让总的delay最小 大约是用priority queue 实现一个贪心的算法，思路应该是这个思路 这个感觉还是蛮难证明的， 然后面试官自己也想了一下 觉得好像有道理 但是还有一些时间。  
+3 大概是找peak element的题 先讨论了一下暴力解 follow up加上二分 主要说 没怎么写。  
+面完以后两个面试官交换了一下眼神 不是特别愿意的约了下一轮。  
+  
+第二轮  
+1， 实现一个rate limiter，这个题已经翻车了第二次了， 先用一个naive的方法 就是用queue嘛，这个在有些情况下不是O（1） 被面试官略微嘲讽了一下 说如果这样不是太简单了嘛 然后哈哈哈。 让我有点乱阵脚 后面有点乱说了其他一些不靠谱的数据结构什么arraylist什么的。后来我仔细研究 这种问题首先可以用几个bucket每个bucket存单位时间内的请求 当然要考虑好时间粒度的问题，另一个我室友说在工业界可以用一个token bucket 以固定速率往bucket里面装token，如果token被取完了说明该提示了。  
+2，经典的地铁刷卡求平均时间题，输入是卡号 地铁站号和时间，求两个地铁站之间的平均值 用两个map， 我想着用两个map应该已经是最小的空间复杂度了吧。 一个map是station1-station2 : [sum, count] 一个是存result。后来还要我优化 然后卡住了，很尴尬，后来问一个大佬他说可以在计算完一个记录的时候删掉用过的记录那个entry。  
+然后就没有然后了
+
+第一轮：洱 肆肆舞 斯乌噫变种 问了点排序和hashmap扩容  
+第二轮：姚司令 舅爸 还有一个之前没做过是把二叉树转成BST，应该是妖灵舅
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDAwMjY3NF19
+eyJoaXN0b3J5IjpbLTEwODkwOTkzMzRdfQ==
 -->
