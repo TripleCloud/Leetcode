@@ -6,7 +6,6 @@ Solution:
 (2) HashMap
 
 
-
 给你一个人的日程表，要求你返回他所有有空的时间，  
 比如: [8:30, 9:30], [9:00 : 12:30],[12:45, 12:50]  
 返回就应该是 【0:00 - 8:30][12:30, 12:45][12:50, 24:00]  
@@ -141,5 +140,6 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDAyNDUyMzMsNDc3OTMyOTIwXX0=
+eyJoaXN0b3J5IjpbLTc4MDA4MzY3OSwtMTcwMDI0NTIzMyw0Nz
+c5MzI5MjBdfQ==
 -->
