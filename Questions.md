@@ -9,8 +9,6 @@ input可以使 2 2 2 3 46 2什么的
 
 第一道题是从linkedlist里面消除所有值为n的node，输入为（Node head，int n），输出是Node，比如 2 -> 3 -> 3-> 4 -> 2, 需要删除2，则返回为3 -> 3 -> 4。这道题比较简单，做完了以后在白纸上跑了一个例子和edge case。第二道题是输入一系列的公司名称和股票值的信息，如果公司信息和股票价值的data是已有的，则需要在旧的value上加上新的股票值，例如（“MSFT”，400），（“FB”，200），（“MSFT”，300）输入后，MSFT会更新为700。需要完成两个操作，一个为得出当前股票值最高的公司，如果有很多公司都是最高值，则返回一个公司名称，第二个函数需要返回K个top公司。一开始想到了用HashMap和priority queue做，被问到priority queue按照什么排序，如果又添加data怎么办，意识到priorityqueue每次在做修改的时候需要重新添加排序，在这里我又提到了TreeMap，key为股票值，value为公司名字的set。我又分析了如果只用TreeMap，当有修改的时候不知道对应公司之前的股票值为多少，需要对TreeMap的所有key遍历一遍找到对应的公司，面试官提示可以用HashMap和TreeMap一起做，在这个提示下完成了代码。
 
-171。 171 答得磕磕绊绊不过还是过了，第二天约下周onsite  
-  
 一轮：刷题网116，马拉松，biginterger 的ood （一小时）  
 二轮：刷题网621，纽约地铁 ood（一小时）
 
@@ -128,6 +126,7 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MzM1NzE3OCwxNTAwNTU0MDg3LC03OD
-AwODM2NzksLTE3MDAyNDUyMzMsNDc3OTMyOTIwXX0=
+eyJoaXN0b3J5IjpbLTEzNzM5MjAwODksLTk3MzM1NzE3OCwxNT
+AwNTU0MDg3LC03ODAwODM2NzksLTE3MDAyNDUyMzMsNDc3OTMy
+OTIwXX0=
 -->
