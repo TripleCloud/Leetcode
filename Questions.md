@@ -34,8 +34,6 @@ top k的股票问题 + follow up
 OOD，设计股票，有很多支股票input，要求写function返回某只股票的平均价格。有很多follow up，记不太清了  
 follow up 1: 返回任意时间点，某只股票的平均价格(函数的Input这次多了个int时间)  
 follow up 2: 返回最多股数的K支股票  
-  
-刷题网散酒气原题
 
 1. 找数组中位数，quickselect  
   
@@ -48,7 +46,7 @@ follow up 2: 返回最多股数的K支股票
 （3）对于不同公司， 累加对应quantity, 然后return top k quantity 的公司
 （e.g. IBM: 1000, MS: 500, APPLE: 3000, IBM: 400）return (top 2): (Apple: 3000, IBM: 1400
 
-第一轮两道题：lc 153 第二题 给一堆flight的信息 然后给一个start end 找所有能从start飞到end的route  
+第二题 给一堆flight的信息 然后给一个start end 找所有能从start飞到end的route  
 第二轮两道题：纽约地铁站面经 然后建2115一个sparse matrix的class
 
 2，N个人排成一个圈编号0~n-1，每次按顺时针方向给人一把刀，他会捅死自己顺时针方向的下一个人，返回最后活下来的人的序号
@@ -108,10 +106,10 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg4OTg3MDgzLC0xNzY3NjI5MTIyLC0xNz
-ExNTAzNDU5LC0xNzM4NTE5Njg2LC02NjAxNjI5MDcsLTEwMjA2
-NjM3MzAsLTIwMTE5MjEyMzksMjE0NTU2Mzg4NCwyNjU1OTEzMC
-w0MDkwMTMyNDUsLTg5MTA0NDg1MSw4NDgzODc2NzQsLTk3MzM1
-NzE3OCwxNTAwNTU0MDg3LC03ODAwODM2NzksLTE3MDAyNDUyMz
-MsNDc3OTMyOTIwXX0=
+eyJoaXN0b3J5IjpbMTI5MjgxMjkzNiwtMTc2NzYyOTEyMiwtMT
+cxMTUwMzQ1OSwtMTczODUxOTY4NiwtNjYwMTYyOTA3LC0xMDIw
+NjYzNzMwLC0yMDExOTIxMjM5LDIxNDU1NjM4ODQsMjY1NTkxMz
+AsNDA5MDEzMjQ1LC04OTEwNDQ4NTEsODQ4Mzg3Njc0LC05NzMz
+NTcxNzgsMTUwMDU1NDA4NywtNzgwMDgzNjc5LC0xNzAwMjQ1Mj
+MzLDQ3NzkzMjkyMF19
 -->
