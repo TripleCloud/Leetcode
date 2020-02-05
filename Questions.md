@@ -68,9 +68,6 @@ follow up 2: 返回最多股数的K支股票
 （1）不同公司 只保留most recent 10 个 datastream （用了map + queue）  
 （2） multi-thread 情况：同时得到多个data: (checkpoint + xlock + commit）  
 （3）对于不同公司， 累加对应quantity, 然后return top k quantity 的公司
-
-  
-  
 （e.g. IBM: 1000, MS: 500, APPLE: 3000, IBM: 400）return (top 2): (Apple: 3000, IBM: 1400
 
 第一轮两道题：lc 153 第二题 给一堆flight的信息 然后给一个start end 找所有能从start飞到end的route  
@@ -138,6 +135,6 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMDU1NDA4NywtNzgwMDgzNjc5LC0xNz
-AwMjQ1MjMzLDQ3NzkzMjkyMF19
+eyJoaXN0b3J5IjpbLTE1MTUzOTE3NzksMTUwMDU1NDA4NywtNz
+gwMDgzNjc5LC0xNzAwMjQ1MjMzLDQ3NzkzMjkyMF19
 -->
