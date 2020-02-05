@@ -15,10 +15,7 @@ Math.min(maxHeight, (maxWidth + 1) / 2 )
 3. 一个矩阵里面是海拔高度，从第一列中间的点开始倒水，判断会不会留到两边。  
 很简单 DFS + memo, 注意判断visited  
 4. LFU
-
-
-嚟蔻 尔巴叁 和  
-一个乱序的二叉树，保持原有的struct的情况下输出二叉搜索树
+  
 
 [系统设计](http://https//www.educative.io/courses/grokking-the-system-design-interview?affiliate_id=5749180081373184/)：  
 搜索引擎中 紫东 布泉的功能  
@@ -33,7 +30,7 @@ top k的股票问题 + follow up
 
 [刷题](http://www.1point3acres.com/bbs/forum-84-1.html)网叁四期变种  
   
-二面  
+二面  3
 聊简历，讲实习经历，实习中最有挑战的部分，why BB  
 
 OOD，设计股票，有很多支股票input，要求写function返回某只股票的平均价格。有很多follow up，记不太清了  
@@ -113,9 +110,10 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE1MDM0NTksLTE3Mzg1MTk2ODYsLT
-Y2MDE2MjkwNywtMTAyMDY2MzczMCwtMjAxMTkyMTIzOSwyMTQ1
-NTYzODg0LDI2NTU5MTMwLDQwOTAxMzI0NSwtODkxMDQ0ODUxLD
-g0ODM4NzY3NCwtOTczMzU3MTc4LDE1MDA1NTQwODcsLTc4MDA4
-MzY3OSwtMTcwMDI0NTIzMyw0Nzc5MzI5MjBdfQ==
+eyJoaXN0b3J5IjpbLTE3Njc2MjkxMjIsLTE3MTE1MDM0NTksLT
+E3Mzg1MTk2ODYsLTY2MDE2MjkwNywtMTAyMDY2MzczMCwtMjAx
+MTkyMTIzOSwyMTQ1NTYzODg0LDI2NTU5MTMwLDQwOTAxMzI0NS
+wtODkxMDQ0ODUxLDg0ODM4NzY3NCwtOTczMzU3MTc4LDE1MDA1
+NTQwODcsLTc4MDA4MzY3OSwtMTcwMDI0NTIzMyw0Nzc5MzI5Mj
+BdfQ==
 -->
