@@ -107,8 +107,7 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 气氛愉快，过了
 
 刷题网 吴柳玲
-
-1) 第一题很诡异，不太好描述，我说不清楚，觉得对大家参考价值不大。不过不难，就是用dfs扫一遍binary tree，这题要写代码  
+ 
 2) 设计数据结构：有两个操作，一个是Insert一个数，另一个是getMedian。getMedian的调用次数远远大于insert的次数 （lc295）  
 解：两个堆，大顶堆维护比当前median小的数，小顶堆维护比当前median大的数。插入一个数，如果比当前median大，插入右侧小顶堆，pop小顶堆，并求median  
 这题不用写代码，讲讲思路就行  
@@ -124,7 +123,7 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4Mzg3Njc0LC05NzMzNTcxNzgsMTUwMD
-U1NDA4NywtNzgwMDgzNjc5LC0xNzAwMjQ1MjMzLDQ3NzkzMjky
-MF19
+eyJoaXN0b3J5IjpbLTg5MTA0NDg1MSw4NDgzODc2NzQsLTk3Mz
+M1NzE3OCwxNTAwNTU0MDg3LC03ODAwODM2NzksLTE3MDAyNDUy
+MzMsNDc3OTMyOTIwXX0=
 -->
