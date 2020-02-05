@@ -24,9 +24,6 @@ Math.min(maxHeight, (maxWidth + 1) / 2 )
 top k的股票问题 + follow up
 
 设计一个ArrayList类，有许多followUp，其实更多的是和面试官讨论怎样implement更好一些  
-设计一个可以随时取出栈中最小元素的stack  
-第二轮：  
-蠡口鹅伞🤙  
   
 二面  3
 聊简历，讲实习经历，实习中最有挑战的部分，why BB  
@@ -84,8 +81,6 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 一道类似system design的题目 针对马拉松这个event设计getEvent() 和 leaderboard()
 
 
-第一轮on-campus:  
-一道merge linkedlist加follow up  
 一道design点餐系统（就是几个函数，然后维护一个数据架构，增删查改顾客这样）  
 气氛愉快，过了
 
@@ -106,7 +101,7 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTg2MDQwNSwxMjkyODEyOTM2LC0xNz
+eyJoaXN0b3J5IjpbMTM2OTAxODUxNywxMjkyODEyOTM2LC0xNz
 Y3NjI5MTIyLC0xNzExNTAzNDU5LC0xNzM4NTE5Njg2LC02NjAx
 NjI5MDcsLTEwMjA2NjM3MzAsLTIwMTE5MjEyMzksMjE0NTU2Mz
 g4NCwyNjU1OTEzMCw0MDkwMTMyNDUsLTg5MTA0NDg1MSw4NDgz
