@@ -30,10 +30,8 @@ top k的股票问题 + follow up
 设计一个可以随时取出栈中最小元素的stack  
 第二轮：  
 蠡口鹅伞🤙  
-蠡口起就起
 
 [刷题](http://www.1point3acres.com/bbs/forum-84-1.html)网叁四期变种  
-刷题网妖酒酒变种  
   
 二面  
 聊简历，讲实习经历，实习中最有挑战的部分，why BB  
@@ -115,9 +113,9 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDE2MjkwNywtMTAyMDY2MzczMCwtMj
-AxMTkyMTIzOSwyMTQ1NTYzODg0LDI2NTU5MTMwLDQwOTAxMzI0
-NSwtODkxMDQ0ODUxLDg0ODM4NzY3NCwtOTczMzU3MTc4LDE1MD
-A1NTQwODcsLTc4MDA4MzY3OSwtMTcwMDI0NTIzMyw0Nzc5MzI5
-MjBdfQ==
+eyJoaXN0b3J5IjpbLTkyMzM0Njg0MSwtNjYwMTYyOTA3LC0xMD
+IwNjYzNzMwLC0yMDExOTIxMjM5LDIxNDU1NjM4ODQsMjY1NTkx
+MzAsNDA5MDEzMjQ1LC04OTEwNDQ4NTEsODQ4Mzg3Njc0LC05Nz
+MzNTcxNzgsMTUwMDU1NDA4NywtNzgwMDgzNjc5LC0xNzAwMjQ1
+MjMzLDQ3NzkzMjkyMF19
 -->
