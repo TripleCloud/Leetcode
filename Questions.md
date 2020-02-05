@@ -76,8 +76,6 @@ follow up 2: 返回最多股数的K支股票
 第一轮两道题：lc 153 第二题 给一堆flight的信息 然后给一个start end 找所有能从start飞到end的route  
 第二轮两道题：纽约地铁站面经 然后建一个sparse matrix的class
 
-第一轮：  
-1，一维candy crush，一个字符串如AABBBACD，出现3次及以上的字符消除，消除之后的如果也有这样的pattern继续消除，对于这个input A,B都会被消除，输出CD。做法是先压缩成(A,2),(B,3),(A,1),(C,1),(D,1)之后再扫描  
 2，meeting rooms2  
   
 第二轮：  
@@ -140,6 +138,6 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MDA4MzY3OSwtMTcwMDI0NTIzMyw0Nz
-c5MzI5MjBdfQ==
+eyJoaXN0b3J5IjpbMTUwMDU1NDA4NywtNzgwMDgzNjc5LC0xNz
+AwMjQ1MjMzLDQ3NzkzMjkyMF19
 -->
