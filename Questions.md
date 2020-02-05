@@ -46,7 +46,6 @@ follow up 2: 返回最多股数的K支股票
   
 2. dp计算矩阵最小乘法次数
 1. NYC 地铁题  
-2. 黎蔻 伞久四  
 2轮：  
 1. datastream top K 三个小问  
 （1）不同公司 只保留most recent 10 个 datastream （用了map + queue）  
@@ -114,9 +113,9 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTQyOTc4MSwtNjYwMTYyOTA3LC0xMD
-IwNjYzNzMwLC0yMDExOTIxMjM5LDIxNDU1NjM4ODQsMjY1NTkx
-MzAsNDA5MDEzMjQ1LC04OTEwNDQ4NTEsODQ4Mzg3Njc0LC05Nz
-MzNTcxNzgsMTUwMDU1NDA4NywtNzgwMDgzNjc5LC0xNzAwMjQ1
-MjMzLDQ3NzkzMjkyMF19
+eyJoaXN0b3J5IjpbLTE3Mzg1MTk2ODYsLTY2MDE2MjkwNywtMT
+AyMDY2MzczMCwtMjAxMTkyMTIzOSwyMTQ1NTYzODg0LDI2NTU5
+MTMwLDQwOTAxMzI0NSwtODkxMDQ0ODUxLDg0ODM4NzY3NCwtOT
+czMzU3MTc4LDE1MDA1NTQwODcsLTc4MDA4MzY3OSwtMTcwMDI0
+NTIzMyw0Nzc5MzI5MjBdfQ==
 -->
