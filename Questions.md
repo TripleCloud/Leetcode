@@ -76,7 +76,7 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 然后就没有然后了
 
 第一轮：洱 肆肆舞 斯乌噫变种 问了点排序和hashmap扩容  
-第二轮：姚司令 舅爸 还有一个之前没做过是把二叉树转成BST，应该是妖灵舅
+第二轮：舅爸 
 
 考了一道design，大意是有很多不断更新tweet，需要经常查出现频率 top k 的公司，给一个函数 get 可以得到某条 tweet 里的公司列表，需要写 2 个函数 insert 和 top_k.  
 地里其实刷到这道题了(最小堆，k会变）
@@ -106,10 +106,10 @@ minStack套了个股票交易的壳子，其实挺简单的虽然之前没做过
 follow-up: 如何节约array消耗的内存？  
 解：用一个变量V1保存当前aray的size，一个变量V2当前有效变量的长度，上例中选出p2后，V1依然是4，V2为3。当V2是V1的一半的时候，将当前array中有效的元素拷贝到一个新的array中，并free掉原array。这样平均起来free的时间复杂度就是O(1)。其实就是借鉴了array长度不够时double size的思想。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MjgxMjkzNiwtMTc2NzYyOTEyMiwtMT
-cxMTUwMzQ1OSwtMTczODUxOTY4NiwtNjYwMTYyOTA3LC0xMDIw
-NjYzNzMwLC0yMDExOTIxMjM5LDIxNDU1NjM4ODQsMjY1NTkxMz
-AsNDA5MDEzMjQ1LC04OTEwNDQ4NTEsODQ4Mzg3Njc0LC05NzMz
-NTcxNzgsMTUwMDU1NDA4NywtNzgwMDgzNjc5LC0xNzAwMjQ1Mj
-MzLDQ3NzkzMjkyMF19
+eyJoaXN0b3J5IjpbLTk2MTg2MDQwNSwxMjkyODEyOTM2LC0xNz
+Y3NjI5MTIyLC0xNzExNTAzNDU5LC0xNzM4NTE5Njg2LC02NjAx
+NjI5MDcsLTEwMjA2NjM3MzAsLTIwMTE5MjEyMzksMjE0NTU2Mz
+g4NCwyNjU1OTEzMCw0MDkwMTMyNDUsLTg5MTA0NDg1MSw4NDgz
+ODc2NzQsLTk3MzM1NzE3OCwxNTAwNTU0MDg3LC03ODAwODM2Nz
+ksLTE3MDAyNDUyMzMsNDc3OTMyOTIwXX0=
 -->
