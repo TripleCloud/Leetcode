@@ -585,7 +585,15 @@ dp初始化全为0，起点在0，dp[0,0] = 1
 我用二分法+BFS做的，二分法查找最优的天数，BFS返回能不能到右下角。  
 还要注意一下Corner case和常数时间的优化。
 
+一面主要就聊简历聊project外加一道coding，大意就是有n个人，然后给你m个关注对。比如(a,b),(b,c)表示a关注b，b关注c，而且可以推导得到a间接关注了c。求n个人里面有几个被其它所有n-1个人（直接或间接）关注了。我就直接每个人来一遍暴力bfs就没啥了。  
+二面没考coding，主要聊了一些经历（为啥quit phd），考了一些基础知识，红黑树和排序算法之类的，聊得很好还给了口头offer。
+
+然后就是Code:  
+1.翻转链表（两种方法：recursive, iterative）  
+2. 给一个由0和1组成的矩阵，检查里面是否有四个角为1的子矩阵。
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMjgxNywxMzE2MjI2ODYxLDI4OTI5MT
-hdfQ==
+eyJoaXN0b3J5IjpbLTY5NTcyNDk0MiwyMTEyODE3LDEzMTYyMj
+Y4NjEsMjg5MjkxOF19
 -->
