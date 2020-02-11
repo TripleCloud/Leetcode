@@ -105,8 +105,62 @@ public int profit;
 
 过滤掉一个vector<string>中返回频率最高的前k个string, 楼主上去一个手写堆然后分析了一波复杂度
 
+1 Given a collection X of unsorted numbers, and factor Y,  
+2 output all the numbers in [min, min*Y].  
+3 min = Min(X)  
+4 Y = 100% ~ 1000%  
+5  
+6 For example,  
+7 Input X: [ 8, 10, 3, 15, 18, 2, 6, 16, 16]  
+8 factor Y: 150%  
+9  
+10 Output: [4,5,6]  
+11 Explanation: Min(X) = 2, so the range is [2, 2*150%=3]  
+12  
+  
+可以扫两遍用O（2N）但是要求要更好，经提示，用了Priority Queue，maintain pq top是永远小于currentMin的。  
+
+> function foo(nums, factor) {  
+> if(!nums.length)  
+> return [];  
+>   
+>   
+> let currentMin = Number.MAX_SAFE_INTEGER;  
+> let pq = new PriortyQueue(max);  
+>   
+> for(let i = 0; i < nums.length; ++i) {  
+>   
+> if(nums _* factor < currentMin ) {  
+> pq = new PriortyQueue(max);  
+> pq.push(nums[i);  
+>   
+> } else if(nums _<= currentMin) {  
+> while(pq.top() > nums _* factor) {  
+> pq.pop();  
+> }  
+> } else if(nums _<= currentMin * factor) {  
+> pq.push(nums_);  
+> }  
+>   
+> currentMin = Math.min(currentMin, nums_);  
+> }  
+>   
+> let result = [];  
+> while(pq.size())  
+> result.push(pq.pop());  
+>   
+> return result;  
+>   
+> }______
+
+  
+  
+**补充内容 (2019-12-5 21:38):**  
+output 是 2，3 刚刚上面写错了
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NDk5NjI2MiwxMzE2MjI2ODYxLDI4OT
+eyJoaXN0b3J5IjpbMTkyMjcyMzY5OCwxMzE2MjI2ODYxLDI4OT
 I5MThdfQ==
 -->
