@@ -619,8 +619,10 @@ TCP如何保证可靠性
 
 1题是之前有人提到都currency转换，1题是2sum 各种复杂度都要写出来，最后时间o（1）：大概就是先设计一个hash map。
 
-
+问简历，tcp，https，python & java概念  
+  
+coding：2sum变体，smallest distance between all robots and all gates
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQ1OTQyNzcsMjExMjgxNywxMzE2Mj
-I2ODYxLDI4OTI5MThdfQ==
+eyJoaXN0b3J5IjpbLTQzODE3NDQ3NiwyMTEyODE3LDEzMTYyMj
+Y4NjEsMjg5MjkxOF19
 -->
