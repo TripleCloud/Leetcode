@@ -197,7 +197,22 @@ log(score(s)) = log( p(W1) * p(W2)*...*p(Wn)) = log( p(W1) ) + log( p(W2) ) + ..
   
 但是为了防止多个小的浮点数相乘溢出，对每个概率取log 相加比较make sense  
 log(0.8) + log(0.0000001) = -7.1 < log(0.1) + log (0.1) = -2
+
+**一面：**  
+面试官人很nice，没有特别紧张的感觉；  
+算法：从上到下从左到右打印二叉树（是我为数不多准备过的coding题）；  
+根据简历自我介绍，简历项目，ML基础知识（MLE, MAP）  
+  
+**二面：**  
+收到第二轮面试也很快！面试官是speech背景的manager；  
+面试官对speech非常擅长，所以speech那个项目的问题在面试中占了很大部分；  
+项目问的很细，features (mfcc)，training的各个环节。因为LZ对speech的知识掌握不扎实，简历上这部分答得并不是很好；  
+还有，NLP的attention机制实现，ML(logistics)  
+  
+二面之后从邮件收到了reject，心情还是比较低落，因为准备不够充分，也觉得没有足够的经历去充实简历。  
+  
+总的来说，北美字节跳动AI Lab可能对你的speech的背景要求比较高，HR效率也很高。 LZ会再接再厉，经验供大家参考，祝同学们面试好运！
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NTcyOTM3NSwxMzE2MjI2ODYxLDI4OT
+eyJoaXN0b3J5IjpbLTU1NjYwNDU4NywxMzE2MjI2ODYxLDI4OT
 I5MThdfQ==
 -->
