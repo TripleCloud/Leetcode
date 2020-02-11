@@ -308,7 +308,284 @@ dp初始化全为0，起点在0，dp[0,0] = 1
 -   刚开始可以用暴力破解
 -   然后面试官提示说觉得哪些地方可以优化，个人觉得求和步骤太冗余了，所以想用前缀和，于是用preSum[idxRight] - preSum[idxLeft] = sum = target
 -   这时最重要的一个环节来了, 就是研究这个公式就能有接近有O（n）解法, 最终解法preSum + Map<Integer, List<Integer>>
+
+1. Given a tree (many children), find the node with the smallest average distance to all other nodes [bytedance]  
+  
+我面完之后自己又整理了一遍  
+
+[Python]  _纯文本查看_  _复制代码_
+
+[?](https://www.1point3acres.com/bbs/#)
+
+01
+
+02
+
+03
+
+04
+
+05
+
+06
+
+07
+
+08
+
+09
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+29
+
+30
+
+31
+
+32
+
+33
+
+34
+
+35
+
+36
+
+37
+
+38
+
+39
+
+40
+
+41
+
+42
+
+43
+
+44
+
+45
+
+46
+
+47
+
+48
+
+49
+
+50
+
+51
+
+52
+
+53
+
+54
+
+55
+
+56
+
+57
+
+58
+
+59
+
+60
+
+61
+
+62
+
+63
+
+64
+
+65
+
+66
+
+67
+
+68
+
+`class` `Node:`
+
+`def` `__init__(``self``, value):`
+
+`self``.value` `=` `value`
+
+`self``.children` `=` `[]`
+
+`def` `add_children(``self``, children):`
+
+`self``.children` `=` `children`
+
+`def` `get_smallest_distance_sum(root: Node):`
+
+`if` `root` `is` `None``:`
+
+`return` `None`
+
+`n` `=` `0`
+
+`s` `=` `0`
+
+`level` `=` `0`
+
+`q` `=` `[root]`
+
+`level_count` `=` `1`
+
+`while` `len``(q) >` `0``:`
+
+`next_level_count` `=` `0`
+
+`while` `level_count >` `0``:`
+
+`current` `=` `q.pop()`
+
+`if` `current` `is` `not` `None``:`
+
+`n` `+``=` `1`
+
+`s` `+``=` `level`
+
+`for` `child` `in` `current.children:`
+
+`q.insert(``0``, child)`
+
+`next_level_count` `+``=` `1`
+
+`level_count` `-``=` `1`
+
+`level` `+``=` `1`
+
+`level_count` `=` `next_level_count`
+
+`mapping` `=` `dict``()`
+
+`get_sub_children_count(root, mapping)`
+
+`result` `=` `{root: s}`
+
+`update(root, n, mapping, s, result)`
+
+`min_value` `=` `float``(``'inf'``)`
+
+`min_node` `=` `None`
+
+`for` `node, value` `in` `result.items():`
+
+`if` `value < min_value:`
+
+`min_node` `=` `node`
+
+`min_value` `=` `value`
+
+`return` `min_node`
+
+`def` `update(root, n, mapping, s, result):`
+
+`for` `child` `in` `root.children:`
+
+`new_s` `=` `s` `-` `mapping[child]` `+` `(n` `-` `mapping[child]` `-` `2``)`
+
+`result[child]` `=` `new_s`
+
+`update(child, n, mapping, new_s, result)`
+
+`def` `get_sub_children_count(root, result):`
+
+`if` `root` `is` `None``:`
+
+`return` `result`
+
+`s` `=` `0`
+
+`for` `child` `in` `root.children:`
+
+`s` `+``=` `1` `+` `get_sub_children_count(child, result)`
+
+`result[root]` `=` `s`
+
+`return` `s`
+
+`n1` `=` `Node(``1``)`
+
+`n2` `=` `Node(``2``)`
+
+`n3` `=` `Node(``3``)`
+
+`n4` `=` `Node(``4``)`
+
+`n5` `=` `Node(``5``)`
+
+`n6` `=` `Node(``6``)`
+
+`# n2.add_children([n4, n5])`
+
+`# n3.add_children([n6])`
+
+`# n1.add_children([n2, n3])`
+
+`print``(get_smallest_distance_sum(n1).value)`
+
+  
+  
+  
+2. How to check a binary tree is complete binary? LC  
+3. Given a list of integers, partition it into 2 subsets so the difference is minimized. (NP-hard问题大哥！）
+
+给一个矩阵，矩阵的每个元素的值代表对应台子的高度。现在开始往矩阵里面注水，每过一小时水位涨1个单位。现在有一个游泳者，想从左上角游到右下角，问注多少时间的水他可以直接游过去而不用上台子？  
+我用二分法+BFS做的，二分法查找最优的天数，BFS返回能不能到右下角。  
+还要注意一下Corner case和常数时间的优化。
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjY2NTIxNywxMzE2MjI2ODYxLDI4OT
-I5MThdfQ==
+eyJoaXN0b3J5IjpbMjExMjgxNywxMzE2MjI2ODYxLDI4OTI5MT
+hdfQ==
 -->
