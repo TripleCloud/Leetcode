@@ -212,7 +212,86 @@ log(0.8) + log(0.0000001) = -7.1 < log(0.1) + log (0.1) = -2
 二面之后从邮件收到了reject，心情还是比较低落，因为准备不够充分，也觉得没有足够的经历去充实简历。  
   
 总的来说，北美字节跳动AI Lab可能对你的speech的背景要求比较高，HR效率也很高。 LZ会再接再厉，经验供大家参考，祝同学们面试好运！
+
+两轮都是coder视频面试，  
+  
+第一轮面试前两小时通知面试官有事面不了了，推了一周，第二周面试面试官人直接没了，打电话没人接，发邮件没人回。。。  
+三四天后recruiter联系说抱歉，面试官有重要会议没结束。重新约时间，面试官回国出差，约在了美东半夜。  
+主要聊research，一个一个过简历，面试官人很好，基本同一方向，聊得内容都懂，聊起来很轻松，最后问了到比较简单的coding，写了五分钟吧，就结束了  
+  
+第二天通知约了第二轮  
+  
+第二轮面试，面试官ML方向。楼主system方向，和ml基本没啥关系  
+面试官全程不问简历，盯着ML基础知识开始问，什么推导SVM之类的。楼主本人只是几年前上过ml课，平时research和ml没啥关系，ml只是只停留在基本概念和简单的应用场景。 面试官全程基本都在问他的方向即ml,完全不想让我介绍自己的方向。coding 是median of data stream，讲了思路之后让coding，我个人用c++,面试官貌似只会Python，听说后就说那你别写了。后面有问了会不会红黑树，讲了个大概然后问我会不会写。。。最后又让实现一个sqrt of float, 大概是用梯度下降解，我不会。面试官全程笑嘻嘻，总说没事，不是你方向，掌握这么多可以了  
+  
+一周后挂了。
+
+  
+  
+  
+个人感受：挂了我认，确实第二轮好多问题回答不上来。  
+但个人认为这种面试毫无意义，面试内容和岗位毫无关系，面试官对我的领域完全不懂，我不认为面试官有能力在这一轮担任面试官，或者说在跟我show off么？位置互换我也有能力让面试官一个问题回答不上来。。。candidate的时间也是时间，不该这么浪费别人时间  
+以后应该不会面他们家了，虽然听说钱多。一方面个人水平不够支撑全领域精通，另一方面如此的混乱面试安排，并且完全没有提前告知会有其他方向的知识考查，也反映出该公司内部可能也有所混乱吧。  
+  
+好的方面： 第一轮面试官我觉得人很好，recruiter/hr 回邮件还算及时。
+sqrt of float用gradient descent写，和我考的一样……我挂了已经
+
+编程题  
+given a circle with 10 nodes, 0->1->2....->9->0, start from 0 node, if allow to move n steps, what is the total number of different paths that the move ends at 0 (start point and end point are same).  
+For example,  
+  
+n = 2, total number of different paths = 2: 0->1->0, 0->9->0  
+n = 4, total number of different paths = 4: 0->1->2->1->0, 0->9->8->9->0, 0->1->0->9->0, 0->9->0->1->0
+
+dp? dp[i, k]存的是走了k步走到i的路线数  
+dp初始化全为0，起点在0，dp[0,0] = 1  
+每次可以往左或者往右走一步，且是环  
+所以dp[i, k] = dp[(i+1)%10, k-1] + dp[(i-1)%10, k-1]  
+最后返回dp[0, n]  
+然后每次更新第k列的时候，都只会用到k-1列，所以可以用rolling dp[i, k&1] 把空间降到O(20)  
+
+[Python]  _纯文本查看_  _复制代码_
+
+[?](https://www.1point3acres.com/bbs/#)
+
+01
+
+02
+
+03
+
+04
+
+05
+
+06
+
+07
+
+08
+
+09
+
+10
+
+`def` `count_path(N):`
+
+`dp` `=` `[[``0``,``0``]` `for` `_` `in` `range``(``10``)]`
+
+`dp[``0``][``0``]` `=` `1`
+
+`for` `k` `in` `range``(N):`
+
+`for` `i` `in` `range``(``10``):`
+
+`dp[i][k``+``1``&``1``]` `=` `dp[(i``-``1``)``%``10``][k&``1``]` `+` `dp[(i``+``1``)``%``10``][k&``1``]`
+
+`return` `dp[``0``][N&``1``]`
+
+`# count_path(2) = 2`
+
+`# count_path(4) = 6`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NjYwNDU4NywxMzE2MjI2ODYxLDI4OT
-I5MThdfQ==
+eyJoaXN0b3J5IjpbNjQ5MjI5MjUsMTMxNjIyNjg2MSwyODkyOT
+E4XX0=
 -->
