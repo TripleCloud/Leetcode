@@ -103,8 +103,10 @@ public int profit;
 后续: 假如你有n辆taxi来接单, 能获得的最大利润是多少?  
 可以假定输入的List已经按照你的要求排好序了.
 
+过滤掉一个vector<string>中返回频率最高的前k个string, 楼主上去一个手写堆然后分析了一波复杂度
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Mjg1MDI5NSwxMzE2MjI2ODYxLDI4OT
+eyJoaXN0b3J5IjpbMTE1NDk5NjI2MiwxMzE2MjI2ODYxLDI4OT
 I5MThdfQ==
 -->
