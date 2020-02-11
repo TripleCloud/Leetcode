@@ -304,15 +304,11 @@ dp初始化全为0，起点在0，dp[0,0] = 1
 **_题目_** 给一个数组和target，找出最长的subarray && sum==target，用接近O(N)的时时间  
   
 
-以下内容需要积分高于 188 您已经可以浏览
-
-  
-
 -   问了数组是否有序和有无重复
 -   刚开始可以用暴力破解
 -   然后面试官提示说觉得哪些地方可以优化，个人觉得求和步骤太冗余了，所以想用前缀和，于是用preSum[idxRight] - preSum[idxLeft] = sum = target
 -   这时最重要的一个环节来了, 就是研究这个公式就能有接近有O（n）解法, 最终解法preSum + Map<Integer, List<Integer>>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDAxNzAzNiwxMzE2MjI2ODYxLDI4OT
+eyJoaXN0b3J5IjpbLTIwMjY2NTIxNywxMzE2MjI2ODYxLDI4OT
 I5MThdfQ==
 -->
