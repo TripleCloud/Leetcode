@@ -291,7 +291,28 @@ dp初始化全为0，起点在0，dp[0,0] = 1
 `# count_path(2) = 2`
 
 `# count_path(4) = 6`
+
+补发一个字节跳动EA部门的面经。1面：leetcode原题 Add Two Numbers（做出来了）  
+然后问了些基础面试问题：  
+1.谈谈java String，StringBuilder，StringBuffer的区别;2. HashMap和ConcurrentHashMap的区别；3.mysql的索引数据结构是什么，简单说一下mysql的索引；4. 垃圾回收有哪些常见算法；  
+5.jvm的类加载机制是什么，tomcat是怎么做类加载的，当两个项目都要导入到tomcat运行，是怎么加载的？（大概是这么问的？）6.TCP的为什么三次握手，四次挥手？挥手中第四次挥手用了多长时间？为什么用这么长时间；  
+  
+2面：题目：可google“字节跳动电容”，会有相关题目出现。  
+  
+3面：最大公共子序列问题 + leetcode原题 gas station，再问了一些其他关于项目的问题
+
+**_题目_** 给一个数组和target，找出最长的subarray && sum==target，用接近O(N)的时时间  
+  
+
+以下内容需要积分高于 188 您已经可以浏览
+
+  
+
+-   问了数组是否有序和有无重复
+-   刚开始可以用暴力破解
+-   然后面试官提示说觉得哪些地方可以优化，个人觉得求和步骤太冗余了，所以想用前缀和，于是用preSum[idxRight] - preSum[idxLeft] = sum = target
+-   这时最重要的一个环节来了, 就是研究这个公式就能有接近有O（n）解法, 最终解法preSum + Map<Integer, List<Integer>>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ5MjI5MjUsMTMxNjIyNjg2MSwyODkyOT
-E4XX0=
+eyJoaXN0b3J5IjpbLTIzMDAxNzAzNiwxMzE2MjI2ODYxLDI4OT
+I5MThdfQ==
 -->
