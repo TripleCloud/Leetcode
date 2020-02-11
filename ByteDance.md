@@ -158,9 +158,13 @@ public int profit;
 **补充内容 (2019-12-5 21:38):**  
 output 是 2，3 刚刚上面写错了
 
-
+第一题，如何在一个单位球面上uniformly sample点。只要意识到gaussian是isotropic的就很显然了。  
+  
+第二题，连续扔骰子，扔出一个单调不减序列且最终抵达6算作成功（直接扔出6也算成功），问成功序列的期望长度是多少。出这个题的时候面试官也说这比较难，提示是可以把每个数字上停留的次数当成是一个geometric distribution。  
+  
+最后的coding题是算median of stream data，面试官说是leetcode原题，我题做得很少并没见过，不过仔细想想很简单，只要用heap来keep前半段max和后半段的min然后适当插入就好了。最后分析一下复杂度，也不是很难算。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjcyMzY5OCwxMzE2MjI2ODYxLDI4OT
+eyJoaXN0b3J5IjpbMTgyMDkxNDY2NiwxMzE2MjI2ODYxLDI4OT
 I5MThdfQ==
 -->
